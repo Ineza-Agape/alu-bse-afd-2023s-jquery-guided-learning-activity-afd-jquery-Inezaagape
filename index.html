@@ -3,10 +3,20 @@
 <head>
   <title>Bookstore Search</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .result { padding: 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+    .result:hover { background: #f0f0f0; }
+    .details { display: none; }
+    #spinner { display: none; }
+  </style>
 </head>
 <body>
-  <input type="text" id="searchInput" placeholder="Search books...">
+  <h1>Bookstore</h1>
+  <input type="text" id="search" placeholder="Search books...">
   <button id="searchBtn">Search</button>
+  <div id="spinner">Loading...</div>
   <div id="results"></div>
+  <div id="bookDetails" class="details"></div>
+  <script src="script.js"></script>
 </body>
 </html>
